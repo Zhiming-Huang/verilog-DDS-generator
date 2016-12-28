@@ -1,0 +1,29 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: 5CE(BA4|FA4) (0x02B050DD)" sof_file="C:/altera/project/output_files/ddsgenerator.sof">
+  <display_attributes active_tab="2"/>
+  <instance compilation_mode="normal" entity_name="sld_multitap" is_auto_node="true" name="auto_lai_0" type="generic">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="7" version="0"/>
+    <core_parameters bank_count="1" capture_mode="timing" crc_value="35E3" enable_auto_setup="false" enable_plug_run="false" max_freq="100" pin_count="8" power_up_state="tristate" tdm_rate="1"/>
+    <pins>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_0"/>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_1"/>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_2"/>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_3"/>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_4"/>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_5"/>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_6"/>
+      <pin io_standard="2.5 V" location="" name="altera_reserved_lai_0_7"/>
+    </pins>
+    <banks>
+      <bank name="Bank 0">
+        <signal name="" type="unused"/>
+        <signal name="" type="unused"/>
+        <signal name="" type="unused"/>
+        <signal name="" type="unused"/>
+        <signal name="" type="unused"/>
+        <signal name="" type="unused"/>
+        <signal name="" type="unused"/>
+        <signal name="" type="unused"/>
+      </bank>
+    </banks>
+  </instance>
+</session>

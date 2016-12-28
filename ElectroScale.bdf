@@ -1,0 +1,192 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 528 104 960 392)
+	(text "ttlto232" (rect 195 -1 245 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(port
+		(pt 432 72)
+		(input)
+		(text "from_uart_ready" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "from_uart_ready" (rect 346 61 441 75)(font "Arial" (font_size 8)))
+		(line (pt 432 72)(pt 256 72))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "to_uart_data[7..0]" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "to_uart_data[7..0]" (rect 4 61 104 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 176 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "to_uart_error" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "to_uart_error" (rect 4 77 79 91)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 176 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "to_uart_valid" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "to_uart_valid" (rect 4 93 77 107)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 176 104))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 4 149 19 163)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 176 160))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "UART_RXD" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "UART_RXD" (rect 4 189 68 203)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 176 200))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 4 245 33 259)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 176 256))
+	)
+	(port
+		(pt 432 88)
+		(output)
+		(text "from_uart_data[7..0]" (rect 0 0 115 14)(font "Arial" (font_size 8)))
+		(text "from_uart_data[7..0]" (rect 329 77 444 91)(font "Arial" (font_size 8)))
+		(line (pt 432 88)(pt 256 88)(line_width 3))
+	)
+	(port
+		(pt 432 104)
+		(output)
+		(text "from_uart_error" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "from_uart_error" (rect 350 93 440 107)(font "Arial" (font_size 8)))
+		(line (pt 432 104)(pt 256 104))
+	)
+	(port
+		(pt 432 120)
+		(output)
+		(text "from_uart_valid" (rect 0 0 88 14)(font "Arial" (font_size 8)))
+		(text "from_uart_valid" (rect 352 109 440 123)(font "Arial" (font_size 8)))
+		(line (pt 432 120)(pt 256 120))
+	)
+	(port
+		(pt 0 120)
+		(output)
+		(text "to_uart_ready" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "to_uart_ready" (rect 4 109 84 123)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 176 120))
+	)
+	(port
+		(pt 0 216)
+		(output)
+		(text "UART_TXD" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "UART_TXD" (rect 4 205 67 219)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 176 216))
+	)
+	(drawing
+		(text "avalon_data_receive_source" (rect 257 43 443 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ready" (rect 228 67 256 79)(font "Arial" (color 0 0 0)))
+		(text "data" (rect 235 83 256 95)(font "Arial" (color 0 0 0)))
+		(text "error" (rect 231 99 253 111)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 233 115 256 127)(font "Arial" (color 0 0 0)))
+		(text "avalon_data_transmit_sink" (rect 19 43 194 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 181 67 202 79)(font "Arial" (color 0 0 0)))
+		(text "error" (rect 181 83 203 95)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 181 99 204 111)(font "Arial" (color 0 0 0)))
+		(text "ready" (rect 181 115 209 127)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 161 131 178 146)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 181 155 195 167)(font "Arial" (color 0 0 0)))
+		(text "external_interface" (rect 72 171 186 186)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "RXD" (rect 181 195 203 207)(font "Arial" (color 0 0 0)))
+		(text "TXD" (rect 181 211 201 223)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 147 227 180 242)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 181 251 205 263)(font "Arial" (color 0 0 0)))
+		(text " ttlto232 " (rect 398 272 441 284)(font "Arial" ))
+		(line (pt 176 32)(pt 256 32))
+		(line (pt 256 32)(pt 256 272))
+		(line (pt 176 272)(pt 256 272))
+		(line (pt 176 32)(pt 176 272))
+		(line (pt 255 52)(pt 255 124))
+		(line (pt 254 52)(pt 254 124))
+		(line (pt 177 52)(pt 177 124))
+		(line (pt 178 52)(pt 178 124))
+		(line (pt 177 140)(pt 177 164))
+		(line (pt 178 140)(pt 178 164))
+		(line (pt 177 180)(pt 177 220))
+		(line (pt 178 180)(pt 178 220))
+		(line (pt 177 236)(pt 177 260))
+		(line (pt 178 236)(pt 178 260))
+		(line (pt 0 0)(pt 432 0))
+		(line (pt 432 0)(pt 432 288))
+		(line (pt 0 288)(pt 432 288))
+		(line (pt 0 0)(pt 0 288))
+	)
+)
+(symbol
+	(rect 120 152 280 264)
+	(text "hx711" (rect 5 0 34 12)(font "Arial" ))
+	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "out[23..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "out[23..0]" (rect 100 27 147 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 160 48)
+		(bidir)
+		(text "ADDO" (rect 0 0 31 12)(font "Arial" ))
+		(text "ADDO" (rect 110 43 141 55)(font "Arial" ))
+		(line (pt 160 48)(pt 144 48))
+	)
+	(port
+		(pt 160 64)
+		(bidir)
+		(text "ADSK" (rect 0 0 29 12)(font "Arial" ))
+		(text "ADSK" (rect 111 59 140 71)(font "Arial" ))
+		(line (pt 160 64)(pt 144 64))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 96))
+	)
+)

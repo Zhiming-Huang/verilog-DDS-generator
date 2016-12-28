@@ -1,0 +1,15 @@
+module phaseadd(clk,k,addressback,address);
+input clk;
+input[8:0]k;
+input[9:0]addressback;
+output[9:0]address;
+
+reg[9:0]d=10'b0000000000;
+reg[9:0]address;
+
+always @(posedge clk)
+begin
+   d=addressback;
+	address=d+k;
+end
+endmodule
